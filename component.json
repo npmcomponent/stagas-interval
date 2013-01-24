@@ -1,0 +1,9 @@
+{
+  "name": "interval",
+  "version": "0.0.1",
+  "description": "Function interval decorator",
+  "keywords": ["interval","repeat","function"],
+  "author": "stagas",
+  "license": "MIT",
+  "scripts": ["index.js"]
+}

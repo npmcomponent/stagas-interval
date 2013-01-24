@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>interval</title>
+    <link rel="stylesheet" href="../build/build.css">
+  </head>
+  <body>
+    <input id="inc" type="text" value="0" autocomplete="off">
+    <script src="../build/build.js"></script>
+    <script>
+    
+    var Interval = require('interval')
+    var inc = document.getElementById('inc')
+    var fn = function (el, n) {
+      el.value = Number(el.value) + (n || 1)
+    }
+    fn(inc)
+    Interval(fn)
+    var iv = fn.interval(1000, inc)
+    setTimeout(function () {
+      clearInterval(iv)
+      setTimeout(function () {
+        Interval.decorate(fn)(500, inc, 5)
+      }, 2000)
+    }, 4000)
+    </script>
+  </body>
+</html>
