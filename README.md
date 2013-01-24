@@ -17,8 +17,8 @@ or
 
 ```js
 var Interval = require('interval')
-Interval.decorate(fn)
-var iv = fn(1000)
+var intervaled = Interval.decorate(fn)
+var iv = intervaled(1000)
 ```
 
 You may also pass additional arguments:
