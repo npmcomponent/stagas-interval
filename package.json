@@ -1,0 +1,12 @@
+{
+  "name": "stagas-interval",
+  "description": "Function interval decorator",
+  "version": "0.0.1",
+  "keywords": [
+    "interval",
+    "repeat",
+    "function"
+  ],
+  "dependencies": {},
+  "license": "MIT"
+}
